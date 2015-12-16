@@ -1,0 +1,24 @@
+/*
+ ANIMATION
+ */
+
+@keyframes imgscale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.008);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes iconspin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}

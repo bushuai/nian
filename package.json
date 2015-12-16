@@ -1,42 +1,39 @@
 {
-  "name": "nian-theme",
-  "version": "1.0.0",
-  "description": "a simple and clean jekyll theme",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bushuai/nian.git"
-  },
-  "keywords": [
-    "simple",
-    "clean",
-    "jekyll",
-    "theme",
-    "bushuai"
-  ],
-  "author": "bushuai",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bushuai/nian/issues"
-  },
-  "homepage": "https://github.com/bushuai/nian#readme",
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-concat-css": "^2.2.0",
-    "gulp-sass": "^2.1.1",
-    "gulp-uglify": "^1.5.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.10.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-imagemin": "^2.4.0",
-    "gulp-notify": "^2.2.0",
-    "inflight": "^1.0.4"
-  }
+    "name": "nian-theme",
+    "version": "1.0.0",
+    "description": "a simple and clean jekyll theme",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bushuai/nian.git"
+    },
+    "keywords": [
+        "simple",
+        "clean",
+        "jekyll",
+        "theme",
+        "bushuai"
+    ],
+    "author": "bushuai",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bushuai/nian/issues"
+    },
+    "homepage": "https://github.com/bushuai/nian#readme",
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-concat-css": "^2.2.0",
+        "gulp-sass": "^2.1.1",
+        "gulp-uglify": "^1.5.1",
+        "browser-sync": "^2.10.0",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-cssmin": "^0.1.7",
+        "gulp-imagemin": "^2.4.0",
+        "gulp-notify": "^2.2.0",
+        "inflight": "^1.0.4"
+    }
 }

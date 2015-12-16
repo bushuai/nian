@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 IMAGE
  */
 gulp.task('images', function() {
-    return gulp.src('./images/*')
+    return gulp.src('./app/images/*')
         .pipe(imagemin({
             optimizationLevel: 3,
             progressive: true,
@@ -31,7 +31,7 @@ gulp.task('images', function() {
 Javascripts
  */
 gulp.task('javascripts', function() {
-    return gulp.src('./javascripts/**/*.js')
+    return gulp.src('./app/javascripts/**/*.js')
         .pipe(uglify().on('error', function(err) {
             console.log(err.message);
         }))
@@ -45,15 +45,16 @@ gulp.task('javascripts', function() {
 Styles
  */
 gulp.task('styles', function() {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./app/sass/**/*.scss')
         .pipe(sass().on('error', function(err) {
             console.log(err.message);
         }))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'ff', 'Chrome', 'ie'],
+            browsers: ['last 2 versions'],
             cascade: true,
             remove: true
         }))
+        .pipe(concatcss('nian.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('./assets/css/'))
         .pipe(notify({
@@ -65,9 +66,9 @@ gulp.task('styles', function() {
 WATCH
  */
 gulp.task('watch', function() {
-    gulp.watch('./sass/**/*.scss', ['styles']);
-    gulp.watch('./javascripts/**/*.js', ['javascripts']);
-    gulp.watch('./images/*', ['images']);
+    gulp.watch('./app/sass/**/*.scss', ['styles']);
+    gulp.watch('./app/javascripts/**/*.js', ['javascripts']);
+    gulp.watch('./app/images/*', ['images']);
 });
 
 gulp.task('default', ['watch']);
