@@ -5,5 +5,8 @@ notifications:
   email:
     - ibushuai@gmail.com
 
+before_script:
+  - npm i -g jekyll
+
 script: 
   - npm install
