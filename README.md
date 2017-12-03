@@ -1,5 +1,8 @@
 # nian
-A simple and clean Jekyll theme by [bushuai](http://bushuai.github.io).[![Build Status](https://travis-ci.org/bushuai/nian.svg?branch=master)](https://travis-ci.org/bushuai/nian)
+
+[![Build Status](https://travis-ci.org/bushuai/nian.svg?branch=master)](https://travis-ci.org/bushuai/nian)
+
+A simple and clean Jekyll theme by [bushuai](http://bushuai.github.io).
 
 ## preview
 ![image](screenshot.png)
